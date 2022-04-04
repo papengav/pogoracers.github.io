@@ -19,8 +19,8 @@
 <body>
 <nav class="navBar">
     <ul>
-        <li> <a href="one.html">About</a> </li>
-        <li> <a href="two.html">Donate</a> </li>
+        <li> <a href="#" onclick="document.getElementById('home').style.display = 'block';document.getElementById('shop').style.display = 'none'">Home</a> </li>
+        <li> <a href="#" onclick="document.getElementById('home').style.display = 'none';document.getElementById('shop').style.display = 'block'">Shop</a> </li>
         <li> <a href="three.html">Waiver</a> </li>
     </ul>
 </nav><div class="titleContainer">
@@ -28,6 +28,7 @@
     <div class="title">Pogostick Race</div>
 </div>
 
+<div id="home">
 <h1 class="innerContent">About</h1>
 
 <p class="innerContent" class="description">
@@ -51,7 +52,10 @@
     <input type="text" id="ssn"><br>
     <input type="submit" onclick="signUp()">
 </form>
-
+</div>
+<div id="shop">
+    <p class="innerContent">hi</p>
+</div>
 <footer class="outerContent">
 <p>
     <p>Questions: <a href=mailto:gpapenthien@my.wctc.edu">gpapenthien@my.wctc.edu</a>
