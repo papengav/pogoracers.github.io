@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="main.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+    </style>
+    <title>Pogostick Race</title>
+    <script>
+        function signUp() {
+            var name = document.getElementById("fullName").value;
+            var cardNum = document.getElementById("cardNumber").value;
+            var ssn = document.getElementById("ssn").value;
+            alert("Name: " + name + ", Card #: " + cardNum + ", SSN: " + ssn + ". Congrats!! You're all signed up!! See you at the race!!!");
+        }
+    </script>
+</head>
+<body>
+<nav class="navBar">
+    <ul>
+        <li> <a href="one.html">About</a> </li>
+        <li> <a href="two.html">Donate</a> </li>
+        <li> <a href="three.html">Waiver</a> </li>
+    </ul>
+</nav><div class="titleContainer">
+    <img class="outerContent" src="pogostickMain.PNG" />
+    <div class="title">Pogostick Race</div>
+</div>
+
+<h1 class="innerContent">About</h1>
+
+<p class="innerContent" class="description">
+    Join in the ultimate pogostick race of 2022!
+    Simply sign up with the following form, pay the
+    $100 dogecoin fee, sign the liability waiver, and show up!
+    The race is 5 miles long, and all finishers get awarded
+    7.349 v-bucks!
+</p>
+
+<hr>
+
+<h2 class="innerContent">Sign Up!!!!!</h2>
+
+<form class="innerContent">
+    <label for="fullName">Full Name:</label><br>
+    <input type="text" id="fullName"><br>
+    <label for="cardNumber">Credit Card Number:</label><br>
+    <input type="text" id="cardNumber"><br>
+    <label for="ssn">Social Security Number:</label><br>
+    <input type="text" id="ssn"><br>
+    <input type="submit" onclick="signUp()">
+</form>
+
+<footer class="outerContent">
+<p>
+    <p>Questions: <a href=mailto:gpapenthien@my.wctc.edu">gpapenthien@my.wctc.edu</a>
+        <br> © 1929-2022, Pogostick Racers
+    </p>
+</footer>
+</body>
+</html>
