@@ -11,7 +11,7 @@ function addTotals() {
     var whichColumn = 4;
     var howManyRows = tableBody.rows.length;
     the_total = 0;
-    for (i = 1; i < (howManyRows - 1); i++) {
+    for (i = 1; i < (howManyRows - 3); i++) {
         var thisTrElem = tableBody.rows[i];
         var thisTdElem = thisTrElem.cells[whichColumn];
         the_total += parseInt(thisTdElem.innerText.slice(1));
