@@ -6,21 +6,14 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
     </style>
+    <script src="script.js"></script>
     <title>Pogostick Race</title>
-    <script>
-        function signUp() {
-            var name = document.getElementById("fullName").value;
-            var cardNum = document.getElementById("cardNumber").value;
-            var ssn = document.getElementById("ssn").value;
-            alert("Name: " + name + ", Card #: " + cardNum + ", SSN: " + ssn + ". Congrats!! You're all signed up!! See you at the race!!!");
-        }
-    </script>
 </head>
 <body>
 <nav class="navBar">
     <ul>
         <li> <a href="#" onclick="document.getElementById('home').style.display = 'block';document.getElementById('shop').style.display = 'none'">Home</a> </li>
-        <li> <a href="#" onclick="document.getElementById('home').style.display = 'none';document.getElementById('shop').style.display = 'block'">Shop</a> </li>
+        <li> <a href="#" onclick="document.getElementById('home').style.display = 'none';document.getElementById('shop').style.display = 'inline-block'">Shop</a> </li>
         <li> <a href="three.html">Waiver</a> </li>
     </ul>
 </nav><div class="titleContainer">
@@ -29,7 +22,7 @@
 </div>
 
 <div id="home">
-<h1 class="innerContent">About</h1>
+<h class="innerContent">About</h>
 
 <p class="innerContent" class="description">
     Join in the ultimate pogostick race of 2022!
@@ -41,7 +34,7 @@
 
 <hr>
 
-<h2 class="innerContent">Sign Up!!!!!</h2>
+<h class="innerContent">Sign Up!!!!!</h>
 
 <form class="innerContent">
     <label for="fullName">Full Name:</label><br>
@@ -53,8 +46,140 @@
     <input type="submit" onclick="signUp()">
 </form>
 </div>
-<div id="shop">
-    <p class="innerContent">hi</p>
+<div id="shop" class="innerContent">
+    <h>Merch Shop</h>
+    <p>Gear up for the race with our top of the line equipment!</p>
+    <table id="shopTable">
+        <tr>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quanity</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>
+                <img src="thepogostick.jpg" height="100px">
+            </td>
+            <td>
+                Gucci Pogostick
+            </td>
+            <td>
+                $<span id="price1">99.99</span>
+            </td>
+            <td id="quantity1">
+                0
+            </td>
+            <td>
+                $<span id="total1">0.00</span>
+            </td>
+            <td>
+                <button type="button" id="add1" onclick="mod(this)">+</button>
+                &nbsp;
+                <button type="button" id="sub1" onclick="mod(this)">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="pogostickHelmet.jfif" height="100px">
+            </td>
+            <td>
+                Rock Hard Helmet
+            </td>
+            <td>
+                $<span id="price2">49.99</span>
+            </td>
+            <td id="quantity2">
+                0
+            </td>
+            <td>
+                $<span id="total2">0.00</span>
+            </td>
+            <td>
+                <button type="button" id="add2" onclick="mod(this)">+</button>
+                &nbsp;
+                <button type="button" id="sub2" onclick="mod(this)">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="pogostickKneepads.jpg" height="100px">
+            </td>
+            <td>
+                Versace Kneepads
+            </td>
+            <td>
+                $<span id="price3">19.99</span>
+            </td>
+            <td id="quantity3">
+                0
+            </td>
+            <td>
+                $<span id="total3">0.00</span>
+            </td>
+            <td>
+                <button type="button" id="add3" onclick="mod(this)">+</button>
+                &nbsp;
+                <button type="button" id="sub3" onclick="mod(this)">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="pogostickElbowpads.jpg" height="100px">
+            </td>
+            <td>
+                Supreme Elbowpads
+            </td>
+            <td>
+                $<span id="price4">19.99</span>
+            </td>
+            <td id="quantity4">
+                0
+            </td>
+            <td>
+                $<span id="total4">0.00</span>
+            </td>
+            <td>
+                <button type="button" id="add4" onclick="mod(this)">+</button>
+                &nbsp;
+                <button type="button" id="sub4" onclick="mod(this)">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="goodolsocks.jpeg" height="100px">
+            </td>
+            <td>
+                Good 'ol Socks
+            </td>
+            <td>
+                $<span id="price5">999.99</span>
+            </td>
+            <td id="quantity5">
+                0
+            </td>
+            <td>
+                $<span id="total5">0.00</span>
+            </td>
+            <td>
+                <button type="button" id="add5" onclick="mod(this)">+</button>
+                &nbsp;
+                <button type="button" id="sub5" onclick="mod(this)">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Tax:</td>
+            <td>
+                $<span id="tax">0.00</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Total:</td>
+            <td>
+                $<span id="total">0.00</span>
+            </td>
+        </tr>
+    </table>
 </div>
 <footer class="outerContent">
 <p>
